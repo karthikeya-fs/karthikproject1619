@@ -1,0 +1,44 @@
+◇ injected env (5) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+MongoDB Connected: ac-kg1deem-shard-00-00.l0exuhe.mongodb.net
+Server running on port 5000
+Auth API: http://127.0.0.1:5000/api/auth
+Chat API: http://127.0.0.1:5000/api/chat
+Socket.io ready (JWT on connect)
+(node:29228) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:29228) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+🔑 OTP for sainavyasreevepada@gmail.com: 234301
+⚠️ SMTP Mail Delivery failed: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. For more
+534-5.7.9 information, go to
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired 98e67ed59e1d1-36a726348e2sm1532452a91.2 - gsmtp
+💡 Local Fallback: OTP for sainavyasreevepada@gmail.com is: 234301
+🔑 OTP for sainavyasreevepada@gmail.com: 364904
+⚠️ SMTP Mail Delivery failed: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. For more
+534-5.7.9 information, go to
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired d9443c01a7336-2beb5695f5fsm13462265ad.8 - gsmtp
+💡 Local Fallback: OTP for sainavyasreevepada@gmail.com is: 364904
+🔑 OTP for sainavyasreevepada@gmail.com: 860100
+⚠️ SMTP Mail Delivery failed: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. For more
+534-5.7.9 information, go to
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired d9443c01a7336-2beb58b303bsm14819095ad.38 - gsmtp
+💡 Local Fallback: OTP for sainavyasreevepada@gmail.com is: 860100
+🔑 OTP for sainavyasreevepada@gmail.com: 888803
+⚠️ SMTP Mail Delivery failed: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. For more
+534-5.7.9 information, go to
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired 98e67ed59e1d1-36a723cf27csm1584141a91.13 - gsmtp
+💡 Local Fallback: OTP for sainavyasreevepada@gmail.com is: 888803
+🔑 OTP for sainavyasreevepada@gmail.com: 374641
+⚠️ SMTP Mail Delivery failed: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. For more
+534-5.7.9 information, go to
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired 98e67ed59e1d1-36a7265a400sm1568583a91.5 - gsmtp
+💡 Local Fallback: OTP for sainavyasreevepada@gmail.com is: 374641
+🔑 OTP for sainavyasreevepada@gmail.com: 557082
+⚠️ SMTP Mail Delivery failed: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. For more
+534-5.7.9 information, go to
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired d9443c01a7336-2beb58e4fcfsm14040265ad.71 - gsmtp
+💡 Local Fallback: OTP for sainavyasreevepada@gmail.com is: 557082
+🔑 OTP for sainavyasreevepada@gmail.com: 733740
+⚠️ SMTP Mail Delivery failed: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. For more
+534-5.7.9 information, go to
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired 98e67ed59e1d1-36a72caaa7dsm1658293a91.17 - gsmtp
+💡 Local Fallback: OTP for sainavyasreevepada@gmail.com is: 733740

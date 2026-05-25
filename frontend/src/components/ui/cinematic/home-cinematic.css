@@ -1,0 +1,86 @@
+/* Home cinematic background — GPU-friendly transforms only */
+
+.home-cinematic-root {
+  isolation: isolate;
+  contain: strict;
+}
+
+.home-cinematic-layer {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ── Scan line (dark grid) ───────────────────────────────────────── */
+@keyframes home-scan-line {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 0.35; }
+  90% { opacity: 0.35; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.home-scan-line {
+  animation: home-scan-line 8s linear infinite;
+}
+
+/* ── Light mesh wave ─────────────────────────────────────────────── */
+@keyframes home-mesh-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(2%, -1.5%) scale(1.03); }
+  66% { transform: translate(-1.5%, 2%) scale(0.98); }
+}
+
+.home-mesh-drift {
+  animation: home-mesh-drift 28s ease-in-out infinite;
+}
+
+/* ── Hero spotlight pulse ────────────────────────────────────────── */
+@keyframes home-hero-pulse {
+  0%, 100% { opacity: 0.45; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.home-hero-spotlight {
+  animation: home-hero-pulse 5s ease-in-out infinite;
+}
+
+/* ── Gradient text shimmer ───────────────────────────────────────── */
+@keyframes home-gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.home-gradient-text {
+  background-size: 200% 200%;
+  animation: home-gradient-shift 6s ease infinite;
+}
+
+/* ── Light beam drift (dark) ─────────────────────────────────────── */
+@keyframes home-beam-drift {
+  0%, 100% { transform: translateX(-10%) rotate(-8deg); opacity: 0.15; }
+  50% { transform: translateX(10%) rotate(-5deg); opacity: 0.28; }
+}
+
+.home-beam-drift {
+  animation: home-beam-drift 14s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-scan-line,
+  .home-mesh-drift,
+  .home-hero-spotlight,
+  .home-gradient-text,
+  .home-beam-drift {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-cinematic-blur-lg {
+    filter: blur(48px) !important;
+  }
+  .home-cinematic-blur-md {
+    filter: blur(36px) !important;
+  }
+}
