@@ -1,8 +1,16 @@
 import axios from "axios";
 
-const baseURL =
-  import.meta.env.VITE_API_URL ||
-  (import.meta.env.DEV ? "/api" : "");
+const baseURL = (() => {
+  if (import.meta.env.VITE_API_URL) return import.meta.env.VITE_API_URL;
+  if (import.meta.env.DEV) return "/api";
+
+  // VITE_API_URL must be set in Vercel dashboard for production builds
+  console.error("[api] VITE_API_URL is not set — all API calls will fail. Set it in Vercel dashboard.");
+
+  return "";
+})();
+
+console.log("API URL:", baseURL);
 
 const API = axios.create({
   baseURL,
